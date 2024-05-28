@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ! ===> Import Font Dana */
+  @font-face {
+    font-family: "Dana";
+    font-display: swap;
+    src: local("Dana"),
+      url("../assets/fonts/Dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Dana medium";
+    font-display: swap;
+    src: local("Dana Medium"),
+      url("../assets/fonts/Dana/woff2/DanaFaNum-Medium.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Dana bold";
+    font-display: swap;
+    src: local("Dana Bold"),
+      url("../assets/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2") format("woff2");
+  }
+  /* ! ===> Import Font Morabba */
+  @font-face {
+    font-family: "Morabba";
+    font-display: swap;
+    src: local("Morabba Light"),
+      url("../assets/fonts/Morabba/woff2/Morabba-Light.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Morabba medium";
+    font-display: swap;
+    src: local("Morabba Medium"),
+      url("../assets/fonts/Morabba/woff2/Morabba-Medium.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Morabba bold";
+    font-display: swap;
+    src: local("Morabba Bold"),
+      url("../assets/fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
+  }
+}
