@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,7 @@
     />
     <title>Coffee Shop</title>
   </head>
-  <body class="font-Dana overflow-x-hidden">
+  <body class="font-Dana bg-gray-100 dark:bg-zinc-800">
     <!-- ! ===> Svgs Icons  -->
     <svg class="hidden">
       <symbol
@@ -75,45 +75,62 @@
     <!-- ! ===> Start Coding Project -->
 
     <!-- ? ===> Header Section Html Code -->
-    <header>
-      <!-- * ===> Logo & Menu  -->
-      <nav>
-        <img src="./assets/image/app-logo.png" alt="Logo App" />
-        <ul>
-          <li><a href="#">صفحه اصلی</a></li>
-          <li>
-            <a href="#">فروشگاه</a>
-            <ul>
-              <li><a href="#">قهوه ویژه</a></li>
-              <li><a href="#">ویژه در سطح جهانی</a></li>
-              <li><a href="#">قهوه درجه یک</a></li>
-              <li><a href="#">ترکیبات تجاری</a></li>
-              <li><a href="#">کپسول قهوه</a></li>
-              <li><a href="#">قهوه زینو برزیلی</a></li>
-            </ul>
-          </li>
-          <li><a href="#">دیکشنری</a></li>
-          <li><a href="#">بلاگ</a></li>
-          <li><a href="#">درباره ما</a></li>
-          <li><a href="#">تماس با ما</a></li>
-        </ul>
-      </nav>
-      <!-- * ===> Cart & Toggle [Lite , Dark] Mode & login -->
-      <div class="">
-        <!-- * ===> Cart & Toggle [Lite , Dark] Mode -->
-        <div>
-          <svg><use xlink:href="#shopping-cart"></use></svg>
-          <svg><use xlink:href="#moon"></use></svg>
-        </div>
-        <!-- * ===> Login -->
-        <div>
-          <svg><use xlink:href="#arrow-left-end-on-rectangle"></use></svg>
+    <header
+      class="fixed top-9 right-0 left-0 bg-black/50 w-[90%] h-24 mx-auto px-10 py-5 rounded-3xl flex items-center"
+    >
+      <div class="flex justify-between w-full">
+        <!-- * ===> Logo & Menu  -->
+        <nav class="flex gap-x-9 items-center">
+          <a href="">
+            <img src="./assets/image/app-logo.png" alt="Logo App"
+          /></a>
+          <ul class="flex gap-x-9 text-xl text-gray-300">
+            <li class="font-DanaMedium text-orange-200">
+              <a href="#">صفحه اصلی</a>
+            </li>
+            <li>
+              <a href="#">فروشگاه</a>
+              <!-- todo ===> Sub Menu -->
+              <ul class="hidden">
+                <li><a href="#">قهوه ویژه</a></li>
+                <li><a href="#">ویژه در سطح جهانی</a></li>
+                <li><a href="#">قهوه درجه یک</a></li>
+                <li><a href="#">ترکیبات تجاری</a></li>
+                <li><a href="#">کپسول قهوه</a></li>
+                <li><a href="#">قهوه زینو برزیلی</a></li>
+              </ul>
+            </li>
+            <li><a href="#">دیکشنری</a></li>
+            <li><a href="#">بلاگ</a></li>
+            <li><a href="#">درباره ما</a></li>
+            <li><a href="#">تماس با ما</a></li>
+          </ul>
+        </nav>
+        <!-- todo ===> Cart & Toggle [Lite , Dark] Mode & login -->
+        <div class="flex text-orange-200">
+          <!-- todo ===> Cart & Toggle [Lite , Dark] Mode -->
+          <div class="flex gap-x-5">
+            <!-- todo ===> Shoping Cart -->
+            <div class="">
+              <svg class="w-6"><use xlink:href="#shopping-cart"></use></svg>
+            </div>
+            <!-- * Moon -->
+            <div class="">
+              <svg class="w-6"><use xlink:href="#moon"></use></svg>
+            </div>
+          </div>
+          <!-- todo ===> Login -->
+          <a href="#" class="flex items-center gap-x-2">
+            <svg class="w-6">
+              <use xlink:href="#arrow-left-end-on-rectangle"></use>
+            </svg>
+            ورود | ثبت‌نام
+          </a>
         </div>
       </div>
     </header>
 
     <!-- ! ===> Scripts -->
     <script src="./scripts/main.js"></script>
-    <a href="#">ورود | ثبت‌نام</a>
   </body>
 </html>
