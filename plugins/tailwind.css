@@ -42,3 +42,8 @@
       url("../assets/fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
   }
 }
+
+body {
+  background: url(../assets/image/headerBgDesktop.png) no-repeat ;
+  background-attachment: fixed;
+}

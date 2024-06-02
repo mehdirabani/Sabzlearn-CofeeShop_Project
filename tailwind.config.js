@@ -4,6 +4,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      letterSpacing: {
+        tightest: "-0.065em",
+      },
       colors: {
         brown: {
           100: "#ECE0D1",

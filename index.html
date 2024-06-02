@@ -76,11 +76,11 @@
 
     <!-- ? ===> Header Section Html Code -->
     <header
-      class="fixed top-9 right-0 left-0 bg-black/50 w-[90%] h-24 mx-auto px-10 py-5 rounded-3xl flex items-center"
+      class="fixed top-9 right-0 left-0 bg-black/50 w-[90%] h-24 mx-auto px-10 py-5 rounded-3xl flex items-center tracking-tightest backdrop-blur-[6px]"
     >
       <div class="flex justify-between w-full">
         <!-- * ===> Logo & Menu  -->
-        <nav class="flex gap-x-9 items-center">
+        <nav class="flex flex-nowrap gap-x-9 items-center">
           <a href="">
             <img src="./assets/image/app-logo.png" alt="Logo App"
           /></a>
@@ -107,21 +107,23 @@
           </ul>
         </nav>
         <!-- todo ===> Cart & Toggle [Lite , Dark] Mode & login -->
-        <div class="flex text-orange-200">
+        <div class="flex gap-10 text-orange-200 text-xl items-center">
           <!-- todo ===> Cart & Toggle [Lite , Dark] Mode -->
           <div class="flex gap-x-5">
-            <!-- todo ===> Shoping Cart -->
+            <!-- * ===> Shoping Cart -->
             <div class="">
-              <svg class="w-6"><use xlink:href="#shopping-cart"></use></svg>
+              <svg class="w-8"><use xlink:href="#shopping-cart"></use></svg>
             </div>
             <!-- * Moon -->
             <div class="">
-              <svg class="w-6"><use xlink:href="#moon"></use></svg>
+              <svg class="w-8"><use xlink:href="#moon"></use></svg>
             </div>
           </div>
+          <!-- todo ===> Divide -->
+          <span class="block w-px h-14 bg-white/20"></span>
           <!-- todo ===> Login -->
-          <a href="#" class="flex items-center gap-x-2">
-            <svg class="w-6">
+          <a href="#" class="flex items-center gap-x-2.5">
+            <svg class="w-8 rotate-180">
               <use xlink:href="#arrow-left-end-on-rectangle"></use>
             </svg>
             ورود | ثبت‌نام
